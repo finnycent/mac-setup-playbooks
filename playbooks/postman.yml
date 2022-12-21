@@ -3,7 +3,7 @@
   become: yes
   vars:
     app_name: Postman
-    app_url: https://dl.pstmn.io/download/latest/osx
+    app_url: https://dl.pstmn.io/download/latest/osx_arm64
     installer_type: app
     download_file_type: zip
     install_method: dmg

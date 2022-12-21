@@ -1,12 +1,12 @@
 ---
 # tasks file for roles
-- include: download.yml
-- include: unzip.yml
+- include_tasks: download.yml
+- include_tasks: unzip.yml
   when: download_file_type == "zip"
-- include: rm_dup.yml
-- include: mount.yml
+- include_tasks: rm_dup.yml
+- include_tasks: mount.yml
   when: download_file_type == "dmg"
-- include: app.yml
+- include_tasks: app.yml
   when: installer_type == "app"
-- include: unmount.yml
+- include_tasks: unmount.yml
   when: download_file_type == "dmg"
